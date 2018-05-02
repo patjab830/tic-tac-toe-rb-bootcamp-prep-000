@@ -98,8 +98,8 @@ def play(board)
   end
 
   if won?(board)
-    puts "Congratulations, #{winner()}! You won."
+    puts "Congratulations, #{winner(board)}! You won."
   else
     puts "Game ended in a draw."
-  end  
+  end
 end
