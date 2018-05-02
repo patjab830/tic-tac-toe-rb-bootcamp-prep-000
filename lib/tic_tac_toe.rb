@@ -96,4 +96,10 @@ def play(board)
   until over?(board)
     turn(board)
   end
+
+  if won?(board)
+    puts "Congratulations, #{winner()}! You won."
+  else
+    puts "Game ended in a draw."
+  end  
 end
